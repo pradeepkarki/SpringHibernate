@@ -20,15 +20,20 @@
 		</bean> -->
 
 	<!-- Setter injection -->
-	<bean id="myFortuneService"
-		class="com.luv2code.springdemo.DI.SetterInjection.HappyFortuneServiceImpl">
-	</bean>
-	<bean id="myCricketCoach" class="com.luv2code.springdemo.DI.SetterInjection.CricketCoach">
-		<property name="fortuneService" ref="myFortuneService" />
-	</bean>
+	<!-- <bean id="myFortuneService" class="com.luv2code.springdemo.DI.SetterInjection.HappyFortuneServiceImpl"> 
+		</bean> <bean id="myCricketCoach" class="com.luv2code.springdemo.DI.SetterInjection.CricketCoach"> 
+		<property name="fortuneService" ref="myFortuneService" /> </bean> -->
 
 	<!-- Injecting literals Values -->
+	<bean id="myFortuneService"
+		class="com.luv2code.springdemo.DI.InjectingLiterals.HappyFortuneServiceImpl">
+	</bean>
+	<bean id="myCricketCoach" class="com.luv2code.springdemo.DI.InjectingLiterals.CricketCoach">
+		<property name="fortuneService" ref="myFortuneService" />
+		<property name="emailAddress" value="pradeep@gmail.com" />
+		<property name="team" value="FCbarcelona" />
 
+	</bean>
 
 
 </beans>

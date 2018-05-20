@@ -9,7 +9,7 @@ package com.luv2code.springdemo.DI.InjectingLiterals;
  */
 public class BaseballCoach implements ICoach {
 
-	// define a private field for dependency
+	// define a private Field for dependency
 	private IFortuneService fortuneService;
 	// define a constructor for dependency injection
 

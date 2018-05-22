@@ -24,6 +24,7 @@ public class HelloSpringApp {
 		 */
 
 		BaseballCoach theCoach = context.getBean("myBaseBallCoach", BaseballCoach.class);
+
 		// call methods on the bean
 		System.out.println(theCoach.getDailyWorkOut());
 
@@ -31,7 +32,6 @@ public class HelloSpringApp {
 		System.out.println(theCoach.getDailyFortune());
 
 		// call all literals value
-
 		System.out.println("Email - " + theCoach.getEmailAddress());
 		System.out.println("Team - " + theCoach.getTeam());
 		// close the context

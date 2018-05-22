@@ -31,10 +31,6 @@ public class BaseballCoach implements ICoach {
 		System.out.println("BaseBallcoach : inside no-arg constructor");
 	}
 
-	public BaseballCoach(IFortuneService fortuneService) {
-		this.fortuneService = fortuneService;
-	}
-
 	public void setFortuneService(IFortuneService fortuneService) {
 		System.out.println("BaseBallcoach : inside setter method - setFortuneService");
 		this.fortuneService = fortuneService;
@@ -60,10 +56,5 @@ public class BaseballCoach implements ICoach {
 		return fortune;
 	}
 
-	@Override
-	public String getDetails() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

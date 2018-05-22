@@ -5,7 +5,5 @@ public interface ICoach {
 	public String getDailyWorkOut();
 
 	public String getDailyFortune();
-	
-	public String getDetails();
 
 }

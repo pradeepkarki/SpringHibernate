@@ -4,7 +4,7 @@ public class CricketCoach implements ICoach {
 
 	private String emailAddress;
 	private String team;
-	
+
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
 	}
@@ -29,12 +29,6 @@ public class CricketCoach implements ICoach {
 	public String getDailyFortune() {
 		String fortune = fortuneService.getFortune();
 		return fortune;
-	}
-
-	@Override
-	public String getDetails() {
-		
-		return emailAddress+" "+team;
 	}
 
 }

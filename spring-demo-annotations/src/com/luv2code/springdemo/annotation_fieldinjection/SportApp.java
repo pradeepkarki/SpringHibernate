@@ -8,7 +8,7 @@ public class SportApp {
 
 		// Read Spring config file
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
-				"FieldInjectionapplicationContext.xml");
+				"fieldinjectionapplicationContext.xml");
 
 		// get the bean from the container
 		ICoach theCoach = context.getBean("tennisCoachImpl", ICoach.class);

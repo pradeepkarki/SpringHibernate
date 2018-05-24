@@ -21,20 +21,6 @@ public class TennisCoachImpl implements ICoach {
 	public TennisCoachImpl() {
 		System.out.println(">> inside default constructor");
 	}
-	
-	//method injection
-	/*
-	 * @Autowired public void methodInjection(IFortuneService fortuneService1) {
-	 * System.out.println("TennisCoachImpl: inside methodInjection() method ");
-	 * fortuneService = fortuneService1; }
-	 */
-	
-	//setter injection
-	/*@Autowired
-	public void setFortuneService(IFortuneService fortuneService) {
-		System.out.println(">> TennisCoachImpl : inside setter method - setFortuneService");
-		this.fortuneService = fortuneService;
-	}*/
 
 	@Override
 	public String getDailyWorkout() {

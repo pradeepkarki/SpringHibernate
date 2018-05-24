@@ -16,9 +16,9 @@ public class TennisCoachImpl implements ICoach {
 	}
 
 	@Autowired
-	public void setFortuneService(IFortuneService fortuneService) {
-		System.out.println(">> TennisCoachImpl : inside setter method - setFortuneService");
-		this.fortuneService = fortuneService;
+	public void methodInjection(IFortuneService fortuneService1) {
+		System.out.println("TennisCoachImpl: inside methodInjection() method ");
+		fortuneService = fortuneService1;
 	}
 
 	@Override

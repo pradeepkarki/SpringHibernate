@@ -42,7 +42,13 @@ public class TennisCoachImpl implements ICoach {
 		System.out.println(">> inside default constructor");
 	}
 
-	// Constructor injection using
+	// Constructor injection using qualifier
+	
+	/*
+	 * The @Qualifier annotation can also be specified on individual constructor
+	 * arguments or method parameters:
+	 */
+	
 	@Autowired
 	public TennisCoachImpl(@Qualifier("randomFortuneServiceImpl") IFortuneService fortuneService) {
 		super();
@@ -60,10 +66,6 @@ public class TennisCoachImpl implements ICoach {
 	public String getDailyFortune() {
 
 		return fortuneService.getFortune();
-	}
-	public void disp()
-	{
-		
 	}
 
 }

@@ -6,6 +6,7 @@
 
 <hr>
 
-<a href="showForm">HelloWorld Form</a>
+<a href="/showForm">HelloWorld Form</a>
+
 </body>
 </html>

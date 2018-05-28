@@ -41,12 +41,11 @@ public class HelloWorldController {
 	// This method is used to read from data using @RequestParam and add to the
 	// model
 	@RequestMapping("/processFormThree")
-	public String upperCaseVal(@RequestParam("name") String name, @RequestParam("email") String email,
-			@RequestParam("username") String username, Model model) {
+	public String upperCaseVal(@RequestParam("email") String email,
+			@RequestParam("pass") String password, Model model) {
 		// add data to the model
-		model.addAttribute("name", name);
 		model.addAttribute("email", email);
-		model.addAttribute("userName", username);
+		model.addAttribute("password", password);
 		return "helloworld";
 	}
 }

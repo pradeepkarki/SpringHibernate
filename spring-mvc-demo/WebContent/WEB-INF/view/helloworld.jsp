@@ -6,16 +6,10 @@
 
 <br>
 <br>
-
-Student name:${name} 
-<br>
-<br>
 email address:${email}
 <br>
 <br>
-User name :${userName}
-
-
+Password name :${password}
 
 </body>
 </html>
